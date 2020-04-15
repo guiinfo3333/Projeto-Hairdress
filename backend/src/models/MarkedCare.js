@@ -6,18 +6,20 @@ class MarkedCare extends Model{
 			hairdress_id: DataTypes.INTEGER,
 			service_id: DataTypes.INTEGER,
 			user_id: DataTypes.INTEGER,
-			DATE: DataTypes.DATE,
+			date: DataTypes.DATE,
 			
 		},{
-			sequelize
+			sequelize,
+			tableName: 'markedcare',
 		})
 	}
 
-	//static associate(models){
-		//this.belongsTo(models.Hairdress, {foreignKey: 'hairdress_id'})
-      //  this.belongsTo(models.Service, {foreignKey: 'service_id'})
-      //  this.belongsTo(models.User, {foreignKey: 'user_id'})
-	//}
+	static associate(models){
+	   this.belongsTo(models.Hairdress, {foreignKey: 'hairdress_id'})
+       this.belongsTo(models.Service, {foreignKey: 'service_id'})
+       this.belongsTo(models.User, {foreignKey: 'user_id'})
+	}
+	
 
 } 
 

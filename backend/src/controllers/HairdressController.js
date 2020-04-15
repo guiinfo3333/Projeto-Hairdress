@@ -6,11 +6,14 @@ async index(req,res){
 	const hairdress = await Hairdress.findAll();
 
 	return res.json(hairdress);
+	
 },
 async store(req,res){
-	const {name,email,password,city,uf,address} = req.body;
+	const {namehair,emailhair,password,city,uf,address} = req.body;
 
-	const hairdress = await Hairdress.create({name:name,email:email,password:password,city:city,uf:uf,address:address});
+	const hairdress = await Hairdress.create({
+		namehair:namehair,emailhair:emailhair,password:password,city:city,uf:uf,address:address
+	});
 
 	return res.json(hairdress);
 

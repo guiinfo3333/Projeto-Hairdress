@@ -9,11 +9,11 @@ module.exports = {
           autoIncrement: true,
           allowNull:false,
        },
-       name: {
+       namehair: {
           type: Sequelize.STRING,
           allowNull: false,
        },
-       email: {
+       emailhair: {
         type: Sequelize.STRING,
         allowNull: false
        },

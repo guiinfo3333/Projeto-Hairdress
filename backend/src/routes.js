@@ -17,6 +17,7 @@ routes.post('/hairdress',HairdressController.store);
 routes.get('/service/:hair_id',ServiceController.index);
 routes.post('/service/:hair_id',ServiceController.store);
 
+routes.get('/markedcare/:hairdress_id',MarkedCareController.index);
 routes.post('/markedcare',MarkedCareController.store);
 
 module.exports = routes;

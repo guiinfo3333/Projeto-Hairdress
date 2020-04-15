@@ -16,5 +16,5 @@ MarkedCare.init(connection);
 Hairdress.associate(connection.models);
 Service.associate(connection.models);
 User.associate(connection.models);
-//MarkedCare.associate(connection.models);
+MarkedCare.associate(connection.models);
 module.exports = connection;

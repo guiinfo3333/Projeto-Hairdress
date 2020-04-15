@@ -8,9 +8,9 @@ async index(req,res){
 	return res.json(users);
 },
 async store(req,res){
-	const {name, email,password,city,uf} = req.body;
+	const {nameuser, emailuser,password,city,uf} = req.body;
 
-	const user = await User.create({name:name,email:email,password:password,city:city,uf:uf});
+	const user = await User.create({nameuser:nameuser,emailuser:emailuser,password:password,city:city,uf:uf});
 
 	return res.json(user);
 
