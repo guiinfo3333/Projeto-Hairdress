@@ -10,7 +10,7 @@ module.exports = {
           autoIncrement: true,
           allowNull:false,
        },
-        name: {
+        nameserv: {
           type: Sequelize.STRING,
           allowNull: false,
        },

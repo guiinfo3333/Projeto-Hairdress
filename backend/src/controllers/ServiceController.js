@@ -20,15 +20,20 @@ module.exports =  {
   		const  hairdress = await Hairdress.findByPk(hair_id);
 	
         if (!hairdress) {
-        	return res.status(400).json({error:'User not found'});
+        	return res.status(400).json({error:'Hairdress not found'});
         }else{
-        const service = await Service.create({
-        	name:name,
-        	value:value,
-        	hairdress_id:hair_id,
-        	detaill:detaill,
-        });
-        return res.json(service);
+			
+				if(!await Service.findOne({ where: {name : name}})){
+					const service = await Service.create({
+						name:name,
+						value:value,
+						hairdress_id:hair_id,
+						detaill:detaill,
+					});
+					return res.json(service);
+				}else{
+					return res.status(400).send({err:'Service already exists'});
+				}
     }
 	} 
 }
