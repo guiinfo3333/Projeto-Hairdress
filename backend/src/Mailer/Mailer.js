@@ -13,7 +13,7 @@ class Mailer{
         secure: false,
         auth:{
         user:   'antonioguilhermetuf@gmail.com' ,
-        pass: '2203010387ba03cd'
+        pass: ''
          }
 
         })
