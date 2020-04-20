@@ -9,7 +9,7 @@ box-sizing:border-box;
 
 body{
 	font:400 14px Roboto,sans-serif;
-	background:#f0f0f5;
+	background:rgb(255,255,255);
 	-webkit-font-smoothing:antialiased;
 }
 input,button,textarea{
@@ -22,16 +22,17 @@ form input{
 	width:100%;
 	height:60px;
 	color:#333;
-	border:1px solid #dcde6;
+	border:2px solid #F51616;
 	border-radius:8px;
 	padding:0 24px;
+
 }
 form textarea{
 	resize:vertical;
 	width:100%;
 	min-height: 140px;
 	color:#333;
-	border:1px solid #dcde6;
+	border:2px solid #F51616;
 	border-radius:8px;
 	padding:16px 24px;
 	line-height: 24px;
@@ -53,7 +54,11 @@ form textarea{
     transition:filter 0.2s; 
 }
 .button:hover{
-	filter:brightness(90%);  /*um filtro*/
+	filter:brightness(90%);  
+	
+}
+.button:active{
+	color:black;
 }
 .back-link{
 display:flex;
@@ -72,4 +77,8 @@ margin-right: 8px;
 .back-link:hover{
 	opacity: 0.8;
 
+}
+.seta{
+	position: relative;
+	left: '3vh';
 }
