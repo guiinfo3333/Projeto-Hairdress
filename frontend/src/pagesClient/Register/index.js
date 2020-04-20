@@ -20,21 +20,21 @@ return(
        
     </section>
 <form>
-<h1>Cadastro</h1>
+<h1>Cadastro de Cliente</h1>
 <input 
-placeholder="Nome do Estabelecimento.."
+placeholder="Seu Nome .."
  />
 
 <input
-type="Email.."
+type="Seu Email.."
 placeholder="E-mail"
    />
 <input  
-type="password"
+type="Sua senha"
 placeholder="Senha.."
  />
  <input  
- type="password"
+ type="Confirme sua senha"
 placeholder="Senha.."
  />
  <input  
@@ -49,7 +49,7 @@ placeholder="Endereço.."
 
   <button className="button" type="submit">Cadastrar</button>
 
-  <Link className="back-link" to="/">Tenho cadastro<FiArrowLeft size={18} className="seta" color="red"/></Link>
+  <Link className="back-link" to="/logonclient">Tenho cadastro<FiArrowLeft size={18} className="seta" color="red"/></Link>
 </form>
       
     </div>
